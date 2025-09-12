@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand&display=swap');
+
+body {
+    font-family: 'Quicksand';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+h1,
+h2 {
+    font-family: 'Amatic SC';
+    color: wheat;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(img/plantafondo.jpg!w700wp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header .hero h1 {
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 0px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+header .hero p {
+    text-align: center;
+    color: wheat;
+    font-size: 25px;
+    padding: 50px;
+    padding-bottom: 80px;
+    margin-bottom: 0;
+}
+
+.navbar {
+    padding: 25px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: wheat;
+}
+
+.navbar .list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar form button {
+    background-color: wheat;
+    border-radius: 10px;
+    color: rgb(56, 51, 41);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+main {
+    background-color: rgb(188, 240, 186);
+    padding: 50px;
+}
+
+footer {
+    padding: 10px;
+    background-color: rgb(28, 68, 28);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: wheat;
+}
+
+#productos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Contenedor de cada producto */
+.producto {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.hero_productos h1 {
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    padding: 80px;
+    margin: 0;
+}
+
+/* Imagen del producto */
+.producto__imagen {
+    flex: 1;
+    text-align: center;
+}
+
+/* Información del producto */
+.producto__info {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Botón de comprar */
+.btn-comprar {
+    padding: 10px 20px;
+    background-color: rgb(2, 87, 2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    font-weight: bold;
+}
+
+.btn-comprar:hover {
+    background-color: rgb(57, 129, 57);
+}
+
+.btn-form {
+    padding: 10px 20px;
+    background-color: #214723;
+    color: rgb(255, 255, 255);
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+    background-color: #2a632d;
+}
+
+.wrapper-local {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Título */
+.wrapper-local h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #aaf0c9;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.wrapper-local h2::after {
+    width: 80px;
+    height: 3px;
+    background: #52b788;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Párrafo */
+.wrapper-local p {
+    font-size: 23px;
+    color: #e9f5ec;
+    text-align: justify;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: normal;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .producto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .producto__info {
+        padding: 10px;
+    }
+}
