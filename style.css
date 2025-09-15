@@ -15,12 +15,11 @@ h2 {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(img/plantafondo.jpg!w700wp);
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -39,6 +38,14 @@ header .hero p {
     padding: 50px;
     padding-bottom: 80px;
     margin-bottom: 0;
+}
+
+#list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar {
@@ -63,7 +70,10 @@ header .hero p {
     gap: 20px;
     padding: 0;
     margin: 0;
+}
 
+.nav-item {
+    text-align: center;
 }
 
 .navbar form button {
@@ -239,8 +249,9 @@ footer {
 
 @media (max-width: 768px) {
 
-    #nav-item-id {
-        color: red;
+    .nav-item a {
+        color: wheat;
+        text-align: center;
     }
 
     .navbar {
@@ -270,16 +281,18 @@ footer {
         display: flex;
         align-items: center;
         gap: 15px;
-    }
-
-    /* Estilo para íconos */
-    .list {
         width: 24px;
         height: 24px;
         cursor: pointer;
     }
 
+    #sandwich {
+        border: none;
+        background-color: wheat;
+        font-size: 24px;
+        cursor: pointer;
 
+    }
 
     /* HEADER */
     header {
