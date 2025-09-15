@@ -236,3 +236,121 @@ footer {
         padding: 10px;
     }
 }
+
+@media (max-width: 768px) {
+
+    #nav-item-id {
+        color: red;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    /* Logo (texto) más chico */
+    .navbar .logo {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Ocultar el menú y formulario en celular */
+    .navbar .list,
+    .navbar form {
+        display: none;
+    }
+
+    /* Contenedor de íconos (buscador, carrito, menú) */
+    .list {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* Estilo para íconos */
+    .list {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+
+
+    /* HEADER */
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)),
+            url(img/plantafondo.jpg!w700wp);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+
+    }
+
+    header .hero h1 {
+        font-size: 50px;
+        margin: 50px 20px 0;
+    }
+
+    header .hero p {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    /* PRODUCTOS */
+    .producto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .producto__imagen img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .producto__info {
+        padding: 10px 0;
+    }
+
+    .hero_productos h1 {
+        font-size: 50px;
+        padding: 40px 20px;
+    }
+
+    /* LOCAL */
+    .wrapper-local {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .wrapper-local h2 {
+        font-size: 2.2rem;
+    }
+
+    .wrapper-local p {
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+    footer {
+        font-size: 16px;
+        padding: 20px 10px;
+    }
+
+    /* BOTONES */
+    .btn-comprar,
+    .btn-form,
+    .navbar form button {
+        font-size: 16px;
+        padding: 10px 15px;
+        width: 100%;
+        max-width: 250px;
+        margin: 10px auto;
+    }
+}
