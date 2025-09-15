@@ -34,19 +34,14 @@ header .hero h1 {
 header .hero p {
     text-align: center;
     color: wheat;
-    font-size: 25px;
+    font-size: 30px;
     padding: 50px;
     padding-bottom: 80px;
     margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Quicksand';
 }
 
-#list {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
 
 .navbar {
     padding: 25px;
