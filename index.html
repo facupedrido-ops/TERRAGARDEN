@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-1">
         <nav class="navbar navbar-expand-lg navbar-light p-3">
             <div class="container-fluid">
                 <!-- Logo/Brand -->
@@ -29,7 +29,7 @@
                 <!-- Contenido colapsable -->
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <!-- Lista de navegación -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link " href="index.html">Inicio</a>
                         </li>
@@ -43,12 +43,13 @@
                             <a class="nav-link" href="./pages/sobre_nosotros.html">Sobre nosotros</a>
                         </li>
                     </ul>
-                    <form class="d-flex align-items-center gap-2" role="search" action="./pages/productos.html"
+                    <form class="d-flex align-items-center gap-2 mx-1 py-2" role="search" action="./index.html"
                         method="get">
-                        <input class="form-control form-control-sm" type="search" placeholder="Buscador"
-                            aria-label="Search">
-                        <button class="btn btn-sm btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                        <button class="btn btn-success d-flex align-items-center ">
+                            Iniciar sesión
+                            <i class="bi bi-person-circle fs-4 ms-2"></i>
+                        </button>
+
                 </div>
             </div>
         </nav>
@@ -56,20 +57,21 @@
             <h1>BIENVENIDOS A TERRA GARDEN</h1>
             <p>Un lugar donde las plantas crecen, y tus ideas florecen.</p>
         </section>
+
     </header>
     <main>
         <div id="carousel" class="carouselslide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="img/slide4.jpeg" class="d-block w-75 mx-auto"
+                    <img src="img/slide4.jpeg" class="d-block w-75 mx-auto my-3"
                         alt="slide1 foto de plantas en el interior del vivero">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="img/slide5.jpeg" class="d-block w-75 mx-auto"
+                    <img src="img/slide5.jpeg" class="d-block w-75 mx-auto my-3"
                         alt="slide2 foto de plantas publicadas dentro del vivero">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="img/slide6.jpeg" class="d-block w-75 mx-auto"
+                    <img src="img/slide6.jpeg" class="d-block w-75 mx-auto m-3"
                         alt="slide3 foto de plantas con flores en el exterior">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
