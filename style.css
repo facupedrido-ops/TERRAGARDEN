@@ -99,6 +99,11 @@ footer {
     color: wheat;
 }
 
+footer a {
+    color: wheat;
+    text-decoration: none;
+}
+
 #productos {
     max-width: 1200px;
     margin: 0 auto;
@@ -390,6 +395,11 @@ footer {
     footer {
         font-size: 16px;
         padding: 20px 10px;
+    }
+
+    footer a {
+        color: wheat;
+        text-decoration: none;
     }
 
     /* BOTONES */
